@@ -6,6 +6,10 @@ tagger: SequenceTagger = SequenceTagger.load("ner")
 sentence: Sentence = Sentence("George Washington went to Washington .")
 tagger.predict(sentence)
 
-print("Analysing sentence %s“ % sentence)
+
+print("Analysing sentence %s“ % sentence) alt
+
+print("Analysing the sentence %s" % sentence) neu
+
 print("\nThe following NER tags are found: \n")
 print(sentence.to_tagged_string())
